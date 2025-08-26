@@ -71,10 +71,11 @@ export const Dashboard = () => {
           <div className="mx-auto max-w-7xl">
             <div className="text-center text-white">
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                Lab Notification System
+                Girum Hospital
+                <span className="block text-2xl font-medium text-white/90 mt-2">Lab Notification System</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-white/90">
-                Automated Telegram notifications for lab results with intelligent patient matching
+                Automated Telegram notifications for lab results with intelligent patient matching for Girum Hospital
               </p>
               <div className="mt-8 flex items-center justify-center gap-4">
                 <Button variant="secondary" size="lg" className="shadow-lg">

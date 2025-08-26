@@ -15,9 +15,9 @@ export const SetupInstructions = () => {
   return (
     <div className="space-y-6 max-w-4xl mx-auto p-6">
       <div className="text-center space-y-4">
-        <h1 className="text-3xl font-bold text-primary">Complete Setup Instructions</h1>
+        <h1 className="text-3xl font-bold text-primary">Girum Hospital Setup Instructions</h1>
         <p className="text-muted-foreground text-lg">
-          Deploy your Telegram Lab Notification System with backend integration
+          Deploy your Girum Hospital Telegram Lab Notification System with backend integration
         </p>
       </div>
 
