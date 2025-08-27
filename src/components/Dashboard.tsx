@@ -22,6 +22,9 @@ import { PatientManagement } from "./PatientManagement";
 import { NotificationHistory } from "./NotificationHistory";
 import { BotConfiguration } from "./BotConfiguration";
 import { SetupInstructions } from "./SetupInstructions";
+import { RealtimeNotifications } from "./RealtimeNotifications";
+import { Analytics } from "./Analytics";
+import { AuditLog } from "./AuditLog";
 import labHero from "@/assets/lab-hero.jpg";
 
 export const Dashboard = () => {
@@ -143,13 +146,16 @@ export const Dashboard = () => {
 
         {/* Tabs Navigation */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="grid w-full grid-cols-6">
+          <TabsList className="grid w-full grid-cols-9">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="upload">Upload Files</TabsTrigger>
             <TabsTrigger value="patients">Patients</TabsTrigger>
             <TabsTrigger value="notifications">Notifications</TabsTrigger>
             <TabsTrigger value="settings">Bot Settings</TabsTrigger>
             <TabsTrigger value="setup">Setup Guide</TabsTrigger>
+            <TabsTrigger value="realtime">Real-time</TabsTrigger>
+            <TabsTrigger value="analytics">Analytics</TabsTrigger>
+            <TabsTrigger value="audit">Audit Log</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview" className="space-y-6">
@@ -231,6 +237,18 @@ export const Dashboard = () => {
 
           <TabsContent value="setup">
             <SetupInstructions />
+          </TabsContent>
+
+          <TabsContent value="realtime">
+            <RealtimeNotifications />
+          </TabsContent>
+
+          <TabsContent value="analytics">
+            <Analytics />
+          </TabsContent>
+
+          <TabsContent value="audit">
+            <AuditLog />
           </TabsContent>
         </Tabs>
       </div>
