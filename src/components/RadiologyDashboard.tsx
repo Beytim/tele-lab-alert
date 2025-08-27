@@ -48,24 +48,23 @@ export const RadiologyDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div className="bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 py-16">
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 py-12">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center text-white">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Monitor className="h-12 w-12" />
-                <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                  Girum Hospital
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                  Radiology Department
                 </h1>
               </div>
-              <span className="block text-2xl font-medium text-white/90 mb-6">Radiology Department</span>
-              <p className="mt-6 text-lg leading-8 text-white/90">
+              <p className="mt-4 text-lg leading-8 text-white/90">
                 Advanced imaging notification system for X-rays, CT scans, MRI, and ultrasound results
               </p>
-              <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="mt-6 flex items-center justify-center gap-4">
                 <Button variant="secondary" size="lg" className="shadow-lg">
                   <Radiation className="mr-2 h-5 w-5" />
                   View Imaging Studies
@@ -80,7 +79,7 @@ export const RadiologyDashboard = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 -mt-8 relative z-10">
+      <div className="container mx-auto px-4 py-6 -mt-6 relative z-10">
         {/* Stats Overview */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
           {stats.map((stat, index) => {

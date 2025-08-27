@@ -14,7 +14,8 @@ import {
   AlertCircle,
   Settings,
   Upload,
-  MessageSquare
+  MessageSquare,
+  FlaskConical
 } from "lucide-react";
 import { FileUpload } from "./FileUpload";
 import { PatientManagement } from "./PatientManagement";
@@ -62,29 +63,28 @@ export const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: `url(${labHero})` }}
-        />
-        <div className="relative bg-gradient-to-r from-primary/90 to-primary-glow/90 px-6 py-12">
-          <div className="mx-auto max-w-7xl">
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 py-12">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative">
+          <div className="mx-auto max-w-7xl px-6">
             <div className="text-center text-white">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                Girum Hospital
-                <span className="block text-2xl font-medium text-white/90 mt-2">Lab Notification System</span>
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-white/90">
-                Automated Telegram notifications for lab results with intelligent patient matching for Girum Hospital
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <FlaskConical className="h-12 w-12" />
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                  Laboratory Department
+                </h1>
+              </div>
+              <p className="mt-4 text-lg leading-8 text-white/90">
+                Automated lab result notifications with intelligent patient matching
               </p>
-              <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="mt-6 flex items-center justify-center gap-4">
                 <Button variant="secondary" size="lg" className="shadow-lg">
-                  <Upload className="mr-2 h-5 w-5" />
-                  Upload Results
+                  <FlaskConical className="mr-2 h-5 w-5" />
+                  Upload Lab Results
                 </Button>
-                <Button variant="outline" size="lg" className="border-white/20 bg-white/10 text-white hover:bg-white/20">
-                  <Settings className="mr-2 h-5 w-5" />
-                  Configure Bot
+                <Button variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
+                  <Users className="mr-2 h-5 w-5" />
+                  Manage Patients
                 </Button>
               </div>
             </div>
