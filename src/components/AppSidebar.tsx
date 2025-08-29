@@ -23,7 +23,7 @@ const quickActions = [
   { title: "Upload Files", url: "/?tab=upload", icon: Upload },
   { title: "Patient Management", url: "/?tab=patients", icon: Users },
   { title: "Notification History", url: "/?tab=history", icon: History },
-  { title: "Bot Configuration", url: "/?tab=bot", icon: Settings },
+  { title: "Telegram Setup", url: "/telegram-setup", icon: Settings },
 ];
 
 export function AppSidebar() {

@@ -12,6 +12,7 @@ import GI from "./pages/GI";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import TelegramNotifications from "@/components/TelegramNotifications";
+import TelegramSetup from "@/components/TelegramSetup";
 
 const queryClient = new QueryClient();
 
@@ -98,6 +99,13 @@ const App = () => (
               <ProtectedRoute>
                 <DashboardLayout>
                   <TelegramNotifications />
+                </DashboardLayout>
+              </ProtectedRoute>
+            } />
+            <Route path="/telegram-setup" element={
+              <ProtectedRoute>
+                <DashboardLayout>
+                  <TelegramSetup />
                 </DashboardLayout>
               </ProtectedRoute>
             } />
