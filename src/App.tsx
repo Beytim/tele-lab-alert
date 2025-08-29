@@ -11,6 +11,7 @@ import Radiology from "./pages/Radiology";
 import GI from "./pages/GI";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
+import TelegramNotifications from "@/components/TelegramNotifications";
 
 const queryClient = new QueryClient();
 
@@ -90,6 +91,13 @@ const App = () => (
               <ProtectedRoute>
                 <DashboardLayout>
                   <GI />
+                </DashboardLayout>
+              </ProtectedRoute>
+            } />
+            <Route path="/notifications" element={
+              <ProtectedRoute>
+                <DashboardLayout>
+                  <TelegramNotifications />
                 </DashboardLayout>
               </ProtectedRoute>
             } />

@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { FlaskConical, Monitor, Stethoscope, Settings, Users, History, Upload, Home } from "lucide-react";
+import { FlaskConical, Monitor, Stethoscope, Settings, Users, History, Upload, Home, MessageCircle } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -16,6 +16,7 @@ const departments = [
   { title: "Laboratory", url: "/", icon: FlaskConical },
   { title: "Radiology", url: "/radiology", icon: Monitor },
   { title: "Gastroenterology", url: "/gi", icon: Stethoscope },
+  { title: "Telegram Notifications", url: "/notifications", icon: MessageCircle },
 ];
 
 const quickActions = [
